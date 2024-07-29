@@ -27,7 +27,7 @@ This application allows users to add expenses and split them using three differe
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/vishnu-c-b/SIMPLE-BLOG
+   git clone https://github.com/vishnu-c-b/EXPENSE_MANAGEMENT
 
    ```
 
