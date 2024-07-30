@@ -1,4 +1,4 @@
-# expenses/serializers.py
+
 from rest_framework import serializers
 from .models import Expense, ExpenseSplit
 from user_manager.serializers import User
@@ -11,7 +11,7 @@ class ExpenseSplitSerializer(serializers.ModelSerializer):
         model = ExpenseSplit
         fields = ['user', 'amount', 'percentage']
 
-# expenses/serializers.py
+
 class ExpenseSerializer(serializers.ModelSerializer):
     paid_by = serializers.PrimaryKeyRelatedField(queryset=User.objects.all())
     splits = ExpenseSplitSerializer(many=True, source='expensesplit_set')

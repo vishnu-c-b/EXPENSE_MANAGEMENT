@@ -1,4 +1,3 @@
-# expenses/views.py
 from rest_framework import generics, views
 from .models import Expense, ExpenseSplit
 from .serializers import ExpenseSerializer
